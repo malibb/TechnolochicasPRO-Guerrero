@@ -50,18 +50,35 @@ h1 {
 }
 
 
-#subtitulo{
-    font-size: 34px;
-}
-
 /* SELECTOR ETIQUETA*/
 
 img {
     height: 200px;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* SELECTOR CLASE*/
 
 .mamifero {
     border: 15px solid greenyellow;
+}
+
+.colorTextoAzul {
+    /* opción 1: nombre color
+    color:lightskyblue;
+    */
+    color: #23BAC4;
+    background-color: #000;
+}
+
+/* SELECTOR DE ID */
+
+#subtitulo{
+    font-size: 34px;
+}
+
+#gatito {
+    border-radius: 50%;
+    display: block;
 }
