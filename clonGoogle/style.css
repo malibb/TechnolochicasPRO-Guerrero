@@ -12,21 +12,21 @@
 }
 
 header {
-    background-color: aqua;
+    /* background-color: aqua; */
     min-height: 10vh;
-    font-size: 13px;
+    font-size: 19px;
 }
 
 main {
-    background-color: azure;
+    /* background-color: azure; */
     text-align: center;
     min-height: 75vh;
-    font-size: 14px;
+    font-size: 19px;
 }
 
 footer {
-    background-color: pink;
-    font-size: 14px;
+    /* background-color: pink; */
+    font-size: 19px;
 }
 
 /* Estilos para elementos de lista lado a lado */
@@ -64,19 +64,60 @@ header ul {
 }
 
 #logo{
-    margin: 28px;
+    padding-top: 6em;
+    margin-bottom: 1em;
 }
 
 #buscador {
-    display: inline-block;
-    min-width: 45vw;
+    width: 40vw;
     min-height: 50px;
-    border: 1px solid black;
+    border: 1px solid gainsboro;
     border-radius: 25px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#contenedor-buscador {
+    display: flex;
+    justify-content: center;
 }
 
 #buscador input {
+    flex-grow: 1;
     outline: none;
     border: none;
+}
+
+/* Display flex para menu */
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#botones-busqueda button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    /* Margen: Izq-Der Arr-Abj-*/
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    /* Pasas mouse encima se convierte en una mano*/
+    cursor: pointer;
+    user-select: none;
+}
+
+#botones-busqueda button:hover{
+    border: 1px solid #626262;
 }
